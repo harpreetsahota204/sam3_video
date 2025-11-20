@@ -18,7 +18,7 @@ def download_model(model_name, model_path):
     snapshot_download(repo_id=model_name, local_dir=model_path)
 
 
-def load_model(model_name=None, model_path=None, **kwargs):
+def load_model(model_name="facebook/sam3", model_path="facebook/sam3", **kwargs):
     """Load SAM3 Video model for text-based concept tracking.
     
     Args:
@@ -44,7 +44,7 @@ def load_model(model_name=None, model_path=None, **kwargs):
     """
 
     
-    return Sam3VideoModel(model_path="facebook/sam3", **kwargs)
+    return Sam3VideoModel(model_path=model_path, **kwargs)
 
 
 def resolve_input(model_name, ctx):
