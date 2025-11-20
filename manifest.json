@@ -3,7 +3,7 @@
     "url": "https://github.com/harpreetsahota204/sam3_video",
     "models": [
         {
-            "base_name": "facebook/sam3",
+            "base_name": "facebook/sam3_video",
             "base_filename":"sam3_video",
             "author": "Meta AI",
             "license": "SAM License",
