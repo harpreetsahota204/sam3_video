@@ -3,8 +3,8 @@
     "url": "https://github.com/harpreetsahota204/sam3_video",
     "models": [
         {
-            "base_name": "facebook/sam3_video",
-            "base_filename":"sam3_video",
+            "base_name": "facebook/sam3",
+            "base_filename":"sam3",
             "author": "Meta AI",
             "license": "SAM License",
             "source": "https://huggingface.co/facebook/sam3",
