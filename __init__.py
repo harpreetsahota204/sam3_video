@@ -8,7 +8,7 @@ from .zoo import Sam3VideoModel
 logger = logging.getLogger(__name__)
 
 
-def download_model(model_name, model_path):
+def download_model(model_name="facebook/sam3", model_path="facebook/sam3"):
     """Downloads the SAM3 model from HuggingFace.
     
     Args:
