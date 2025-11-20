@@ -42,10 +42,9 @@ def load_model(model_name=None, model_path=None, **kwargs):
         model = load_model(prompt=["person", "car", "dog"])
         dataset.apply_model(model, label_field="tracked_objects")
     """
-    if model_path is None:
-        model_path = "facebook/sam3"
+
     
-    return Sam3VideoModel(model_path=model_path, **kwargs)
+    return Sam3VideoModel(model_path="facebook/sam3", **kwargs)
 
 
 def resolve_input(model_name, ctx):

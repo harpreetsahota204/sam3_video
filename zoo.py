@@ -90,11 +90,11 @@ class Sam3VideoModel(Model, SamplesMixin):
         
         logger.info("Loading SAM3 Video model")
         
-        self.model = Sam3VideoModel.from_pretrained(self.model_path).to(
+        self.model = Sam3VideoModel.from_pretrained("facebook/sam3").to(
             self.device,
             dtype=torch.bfloat16
         )
-        self.processor = Sam3VideoProcessor.from_pretrained(self.model_path)
+        self.processor = Sam3VideoProcessor.from_pretrained("facebook/sam3")
         
         self.model.eval()
         logger.info("SAM3 Video model loaded successfully")
