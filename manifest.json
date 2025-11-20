@@ -1,0 +1,34 @@
+{
+    "name": "sam3_video",
+    "url": "https://github.com/harpreetsahota204/sam3_video",
+    "models": [
+        {
+            "base_name": "facebook/sam3-video",
+            "base_filename":"sam3_video",
+            "author": "Meta AI",
+            "license": "SAM License",
+            "source": "https://huggingface.co/facebook/sam3",
+            "description": "SAM3 Video performs text-based concept tracking across video frames. Finds and tracks ALL instances matching text prompts throughout the video with automatic object ID assignment.",
+            "tags": [
+                "torch",
+                "zero-shot",
+                "video",
+                "segmentation",
+                "segment-anything",
+                "tracking",
+                "instance-segmentation",
+                "text-prompting"
+            ],
+            "date_added": "2025-11-20",
+            "requirements": {
+                "packages": ["huggingface-hub", "transformers", "torch", "torchvision"],
+                "cpu": {
+                    "support": true
+                },
+                "gpu": {
+                    "support": true
+                }
+            }
+        }
+   ]
+}
